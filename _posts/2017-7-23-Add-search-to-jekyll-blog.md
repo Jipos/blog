@@ -6,10 +6,10 @@ title: Search all posts in Jekyll blog
 I want to be able to search the posts on my Jekyll blog.
 
 The following page got me started:
-> https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/
+> <https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/>
 
 The actual documentation of the jekyll-lunr-js-search plugin, used in the above page can be found here:
-> https://github.com/slashdotdash/jekyll-lunr-js-search
+> <https://github.com/slashdotdash/jekyll-lunr-js-search>
 
 Some things I ran into:
 * adding a search.html to the root of my repo, resulted in a /blog/search/ page getting created.

@@ -6,13 +6,13 @@ title: Use Spring-security for authorization but not authentication
 We have an application, which uses Shibboleth for authentication. We want to use spring-security for authorizaion within the application. The default spring-security assumes it it responsible for handling the authentication too.
 
 Spring-security provides _pre-authentication scenarios_, for use cases like this.
-> https://docs.spring.io/spring-security/site/docs/current/reference/html/preauth.html
+> <https://docs.spring.io/spring-security/site/docs/current/reference/html/preauth.html>
 
 In this scenario, we register a specific 'preauthentication' filter, which assumes that the user has been authenticated and the user's credentials are available somehow (e.g. as a request header or a request attribute), and uses this information to populate the SecurityContext.
 
 ## Proof of concept
 
-Create a new, empty, spring-boot project (http://start.spring.io/).
+Create a new, empty, spring-boot project (<http://start.spring.io/>).
 For our example, it needs to include the spring-boot-starter-web and spring-boot-starter-security as dependencies.
 
 By default, spring-boot secures itself using basic auth. This means that it uses basic auth for authentication. Because we don't want our application to handle authentication, we disable this feature

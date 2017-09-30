@@ -4,7 +4,7 @@ title: Immutable persistence
 ---
 
 The following blog post describes a way to use immutable objects for persistence in java:
-> http://vlkan.com/blog/post/2015/03/21/immutable-persistence/
+> <http://vlkan.com/blog/post/2015/03/21/immutable-persistence/>
 
 It seems like an interesting idea, to differentiate between saved and unsaved (or draft) objects by using different classes.
 
